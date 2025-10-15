@@ -1,0 +1,124 @@
+/* Estilos gerais */
+.container {
+    max-width: 1200px;
+}
+
+/* Estilos das tabelas */
+.table {
+    font-size: 0.9rem;
+}
+
+.table th {
+    background-color: #f8f9fa;
+}
+
+/* Estilos dos jogos */
+.match-card {
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.match-teams {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.team-name {
+    flex: 1;
+}
+
+.match-score {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.score-input {
+    width: 60px;
+    text-align: center;
+}
+
+.clear-btn {
+    margin-left: 8px;
+}
+
+/* Estilos dos grupos */
+.group-section {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.group-section h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* Estilos do mata-mata */
+.knockout-match {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+/* Bracket visual */
+.bracket {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+.bracket-col h5 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+.ko-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 4px 0;
+}
+.ko-team {
+    flex: 1;
+}
+.ko-score, .ko-pen {
+    width: 60px;
+    text-align: center;
+}
+.ko-score-b, .ko-pen-b, .ko-et-b {
+    width: 60px;
+    text-align: center;
+}
+.ko-penalty {
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top: 1px dashed #ccc;
+}
+.ko-extra {
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top: 1px dashed #ccc;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .table {
+        font-size: 0.8rem;
+    }
+    
+    .match-card {
+        padding: 5px;
+    }
+}
