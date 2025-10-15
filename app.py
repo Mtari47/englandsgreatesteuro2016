@@ -2,7 +2,7 @@ from flask import Flask, render_template, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import text
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='.')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///euro2016.db'
 db = SQLAlchemy(app)
 
